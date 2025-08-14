@@ -1,114 +1,147 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
   <title>BlackEarth Carbon — Investor Proposal</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Certified biochar carbon removals from a third-generation Oxfordshire farm." />
   <style>
-    :root{--bg:#f8f8fb;--fg:#111;--muted:#666;--card:#fff;--border:#e7e7ef;--accent:#0f766e}
+    :root{
+      --bg:#f8f8fb; --fg:#111; --muted:#666; --card:#fff; --border:#e7e7ef; --accent:#0f766e;
+      --accent-2:#0b4f49; --good:#15803d; --warn:#b45309;
+    }
     *{box-sizing:border-box} body{margin:0;font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",sans-serif;background:linear-gradient(#fff,#f8f8fb)}
-    a{color:var(--accent);text-decoration:none} .wrap{max-width:1120px;margin:0 auto;padding:24px}
-    header{padding:56px 0} h1{font-size:40px;line-height:1.1;margin:0 0 10px} .sub{color:var(--muted);font-size:18px;max-width:800px}
-    .cta{margin-top:20px;display:flex;gap:12px;flex-wrap:wrap}
-    .btn{display:inline-flex;align-items:center;gap:8px;padding:12px 16px;border-radius:999px;border:1px solid var(--border);background:var(--fg);color:#fff}
+    a{color:var(--accent);text-decoration:none}
+    .wrap{max-width:1120px;margin:0 auto;padding:24px}
+    header{padding:56px 0}
+    h1{font-size:40px;line-height:1.1;margin:0 0 10px}
+    .sub{color:var(--muted);font-size:18px;max-width:800px}
+    nav{border-bottom:1px solid var(--border);background:#fff;position:sticky;top:0;z-index:10}
+    .nav-inner{max-width:1120px;margin:0 auto;display:flex;gap:16px;align-items:center;justify-content:space-between;padding:10px 24px}
+    .nav-links{display:flex;gap:14px;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:999px;border:1px solid var(--border);background:var(--fg);color:#fff}
     .btn.secondary{background:#fff;color:var(--fg)}
-    .grid{display:grid;gap:16px} .kpis{grid-template-columns:repeat(auto-fit,minmax(220px,1fr));margin-top:28px}
+    .btn.small{padding:8px 12px;font-size:14px}
+    .grid{display:grid;gap:16px}
+    .kpis{grid-template-columns:repeat(auto-fit,minmax(220px,1fr));margin-top:28px}
     .card{background:var(--card);border:1px solid var(--border);border-radius:18px;padding:16px}
-    .label{font-size:12px;color:var(--muted)} .value{font-weight:700;font-size:20px}
-    section{padding:32px 0} h2{font-size:26px;margin:0 0 12px} p{margin:0 0 12px}
+    .label{font-size:12px;color:var(--muted)}
+    .value{font-weight:700;font-size:20px}
+    section{padding:36px 0}
+    h2{font-size:26px;margin:0 0 12px}
+    h3{margin:0 0 8px}
+    p{margin:0 0 12px}
     ul{margin:8px 0 0 18px} li{margin:6px 0}
-    footer{padding:28px 0;color:#777;text-align:center}
+    .two{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+    .three{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+    footer{padding:28px 0;color:#777;text-align:center;border-top:1px solid var(--border)}
+    .muted{color:var(--muted)}
+    .note{font-size:13px;color:#555}
+    .cta{margin-top:18px;display:flex;gap:12px;flex-wrap:wrap}
     @media (min-width:900px){h1{font-size:52px}.sub{font-size:20px}}
+    .pill{display:inline-block;padding:6px 10px;border-radius:999px;background:#0f766e10;border:1px solid #0f766e33;color:#0f766e;font-size:12px}
+    .warn{color:var(--warn)} .good{color:var(--good)}
+    .table{width:100%;border-collapse:collapse}
+    .table th,.table td{padding:10px;border-bottom:1px solid var(--border);text-align:left}
+    .banner{background:#0b0b0c;color:#fff;border-radius:16px;padding:18px}
   </style>
 </head>
 <body>
+  <nav>
+    <div class="nav-inner">
+      <div><strong>BlackEarth Carbon</strong></div>
+      <div class="nav-links">
+        <a href="#opportunity">Opportunity</a>
+        <a href="#tech">Technology</a>
+        <a href="#market">Market</a>
+        <a href="#financials">Financials</a>
+        <a href="#impact">Impact</a>
+        <a href="#roadmap">Roadmap</a>
+        <a href="#risks">Risks</a>
+        <a href="#contact" class="btn small">Contact</a>
+      </div>
+    </div>
+  </nav>
+
   <header>
     <div class="wrap">
       <h1>BlackEarth Carbon — Investor Proposal</h1>
-      <p class="sub">Certified biochar carbon removals from a third-generation Oxfordshire farm, with rigorous MRV and pragmatic unit economics.</p>
+      <p class="sub">Certified biochar carbon removals from a third-generation Oxfordshire farm — rigorous MRV, pragmatic unit economics, and real rural co-benefits.</p>
       <div class="kpis grid">
         <div class="card"><div class="label">Annual removals</div><div class="value">~1,760 tCO₂e</div><div class="label">EBC C-Sink eligible</div></div>
         <div class="card"><div class="label">Plant capex</div><div class="value">£2.93m</div><div class="label">Containerised slow-pyrolysis</div></div>
-        <div class="card"><div class="label">Annual opex</div><div class="value">£255k</div><div class="label">1.5 FTE + MRV + power</div></div>
-        <div class="card"><div class="label">Standards</div><div class="value">EBC C-Sink / MRV</div><div class="label">Puro.earth or Carbonfuture</div></div>
+        <div class="card"><div class="label">Annual opex</div><div class="value">£255k</div><div class="label">Ops + MRV + power</div></div>
+        <div class="card"><div class="label">Standards & MRV</div><div class="value">EBC C-Sink</div><div class="label">Puro.earth / Carbonfuture</div></div>
       </div>
       <div class="cta">
         <a class="btn" href="mailto:tombuswell80@gmail.com">Request a meeting</a>
-        <a class="btn secondary" href="#" title="Add your plan.pdf later">Download full plan (PDF)</a>
+        <a class="btn secondary" href="/plan.pdf" title="Upload your plan as plan.pdf to enable this">Download full plan (PDF)</a>
       </div>
     </div>
   </header>
 
   <main class="wrap">
-    <section>
+    <section id="opportunity">
       <h2>The Opportunity</h2>
-      <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(280px,1fr));">
-        <div class="card"><h3>Why now</h3><p>Durable removals are supply-constrained. Biochar leads delivered CDR volumes and commands premium pricing with credible MRV. UK/EU policy tailwinds are reducing buyer risk.</p></div>
+      <div class="grid two">
+        <div class="card"><h3>Why now</h3><p>Durable removals are supply-constrained. Biochar leads delivered CDR volumes and commands premium pricing with credible MRV. EU/UK policy tailwinds are reducing buyer risk.</p></div>
         <div class="card"><h3>Why here</h3><p>On-farm siting in Oxfordshire within a tight logistics radius. Trusted land stewardship, access to clean woody feedstocks, and diversified soil/material sinks enable defensible, scalable supply.</p></div>
       </div>
     </section>
 
-    <section>
-      <h2>Financial Snapshot</h2>
-      <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(220px,1fr));">
-        <div class="card"><div class="label">Price band</div><div class="value">£150–£250 / tCO₂e</div><div class="label">verified CORCs</div></div>
-        <div class="card"><div class="label">Steady-state revenue</div><div class="value">£352k–£440k</div><div class="label">before upside</div></div>
-        <div class="card"><div class="label">Ramp</div><div class="value">Y1: 60%, Y2: 85%, Y3: 100%</div><div class="label">commissioning to nameplate</div></div>
-      </div>
-      <p style="color:#777;font-size:14px;margin-top:8px">Primary revenue: verified carbon removals (CORCs). Optional upside from biochar material and waste-heat use.</p>
-    </section>
-
-    <section>
+    <section id="tech">
       <h2>Technology & Operations</h2>
-      <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(260px,1fr));">
-        <div class="card"><h3>Plant</h3><p>Containerised slow-pyrolysis with emissions abatement, automated feed, and waste-heat recovery for drying. Designed to meet EBC Quality and C-Sink thresholds (e.g., H/Corg &lt; 0.7).</p></div>
-        <div class="card"><h3>Feedstock</h3><p>Local Grade A/B wood waste, estate thinnings, on-farm hedgerow arisings, plus herbaceous blends (straw/leys) with moisture control and screening for stable, certifiable char.</p></div>
-        <div class="card"><h3>Sinks & MRV</h3><p>Soil sinks on-farm and with neighbours, plus material sinks documented with GPS, batch logs and independent labs; issuance via Puro.earth / Carbonfuture.</p></div>
+      <div class="grid three">
+        <div class="card"><h3>Plant</h3><p>Containerised slow-pyrolysis with emissions abatement, automated feed, and waste-heat recovery for drying. Designed to meet EBC Quality and C-Sink thresholds (e.g., H/C<sub>org</sub> &lt; 0.7).</p></div>
+        <div class="card"><h3>Feedstock</h3><p>Local Grade A/B wood waste, estate thinnings, on-farm hedgerow arisings; herbaceous blends (straw/leys) as appropriate with moisture control and screening for stable, certifiable char.</p></div>
+        <div class="card"><h3>Sinks & MRV</h3><p>Soil sinks on-farm and with neighbours, plus material sinks documented with GPS, batch logs, and independent labs; issuance via Puro.earth / Carbonfuture.</p></div>
       </div>
     </section>
 
-    <section>
+    <section id="market">
+      <h2>Market & Customers</h2>
+      <div class="card">
+        <p>Target corporates with 2030/2050 net-zero commitments requiring high-integrity, durable removals. Priority segments: UK/EU technology and professional services, heavy industry residuals, and climate-forward consumer brands. GTM blends direct relationships, platform listings, and forward offtake MoUs.</p>
+      </div>
+    </section>
+
+    <section id="financials">
+      <h2>Financial Snapshot</h2>
+      <div class="grid three">
+        <div class="card"><div class="label">Price band</div><div class="value">£150–£250 / tCO₂e</div><div class="label">verified CORCs</div></div>
+        <div class="card"><div class="label">Steady-state removals</div><div class="value">~1,760 tCO₂e / yr</div><div class="label">before upside</div></div>
+        <div class="card"><div class="label">Ramp (illustrative)</div><div class="value">Y1: 60% • Y2: 85% • Y3+: 100%</div></div>
+      </div>
+
+      <div class="card" style="margin-top:12px">
+        <div style="display:flex;gap:16px;align-items:center;flex-wrap:wrap">
+          <label class="label">Scenario price (£/tCO₂e)</label>
+          <input id="price" type="range" min="120" max="300" step="5" value="200" oninput="recalc()" />
+          <b id="pricev">£200</b>
+          <span class="pill">live estimate</span>
+        </div>
+        <div class="grid three" style="margin-top:12px">
+          <div class="card"><div class="label">Steady-state revenue</div><div class="value" id="rev">£352,000</div><div class="label">price × 1,760 tCO₂e</div></div>
+          <div class="card"><div class="label">Annual margin</div><div class="value" id="margin">£97,000</div><div class="label">revenue − £255k opex</div></div>
+          <div class="card"><div class="label">Payback (rough)</div><div class="value" id="payback">> 10 yrs</div><div class="label">~£2.93m / annual margin</div></div>
+        </div>
+        <p class="note">Illustrative only; excludes financing, taxes, ramp, outages, and upside from material/heat sales.</p>
+      </div>
+    </section>
+
+    <section id="impact">
+      <h2>Impact</h2>
+      <div class="grid two">
+        <div class="card"><h3>Durable sequestration</h3><p>Permanent-leaning storage with traceability and independent verification.</p></div>
+        <div class="card"><h3>Local value</h3><p>Circular feedstock management, rural jobs, and neighbour soil sinks.</p></div>
+      </div>
+    </section>
+
+    <section id="roadmap">
       <h2>Roadmap (0–24 months)</h2>
       <div class="card">
         <ul>
-          <li><b>0–2 months:</b> Lock feedstock MOUs (arborists, estates, straw); engage MRV partner; EA pre-app.</li>
-          <li><b>3–6 months:</b> Planning & permit submission; OEM shortlist & diligence; finance close (grants/green loan/partner).</li>
-          <li><b>7–12 months:</b> Civils & utilities; covered bays; equipment delivery & installation; commissioning & trial batches.</li>
-          <li><b>13–24 months:</b> EBC audit; MRV onboarding; first issuance & sales; ramp to nameplate; scale (second line / heat use / material sinks).</li>
-        </ul>
-      </div>
-    </section>
-
-    <section>
-      <h2>Risks & Mitigations</h2>
-      <div class="card">
-        <ul>
-          <li><b>Feedstock shortfall/quality:</b> Multi-year contracts; moisture/size specs; on-site pre-drying; QA sampling.</li>
-          <li><b>Price volatility:</b> Forward offtakes; diversified sinks; optional biochar/heat sales.</li>
-          <li><b>Permit delays:</b> EA pre-app; experienced consultant; phased feedstock list.</li>
-          <li><b>Equipment downtime:</b> OEM service plan; critical spares; trained operator coverage.</li>
-          <li><b>MRV non-compliance:</b> EBC pre-audit; regimented sampling; data logs; platform QA.</li>
-        </ul>
-      </div>
-    </section>
-
-    <section>
-      <div class="card" style="background:#0b0b0c;color:#fff">
-        <div style="display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between">
-          <div>
-            <h2 style="margin:0 0 4px">Let’s talk investment</h2>
-            <p style="margin:0;color:#c8c8cb">We’re arranging forward offtakes and co-investment for our first certified line.</p>
-          </div>
-          <div>
-            <a class="btn" href="mailto:tombuswell80@gmail.com" style="background:#fff;color:#111">Email BlackEarth Carbon</a>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer>© <span id="y"></span> BlackEarth Carbon • Oxfordshire, UK</footer>
-  <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
-</body>
-</html>
+          <li><b>0–2 months:</b> Lock feedstock MoUs; engage MRV partner; EA pre-app.</li>
+          <li><b>3–6 months:</b> Planning & permit submission; OEM shortlist & diligence; financing workstream.</li>
+          <li><b>7–12 months:</b> Civils & utilities; covered bays; delivery & installation; commissioning.</li>
+          <li><b>13–24 months:</b> EBC audit; MRV onboarding; first issuance & sales; ramp to nameplate; evaluate second line / heat use
